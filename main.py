@@ -1,4 +1,5 @@
-
+# import
+from school_schedule.student import Student
 
 #first instance
 quinn = Student(
@@ -14,9 +15,15 @@ quinn = Student(
                 ]
             )
 
-quinn.add_class("Painting")
-quinn.get_num_classes()
-quinn.summary()
+# print(quinn)
+# # vars function returns student object as dictionary
+# # vars prints the repr
+# print(vars(quinn))
+# quinn.greeting()
+
+print(quinn.add_class("Painting"))
+# quinn.get_num_classes()
+# quinn.summary()
 
 # second instance
 claire = Student(
@@ -32,8 +39,8 @@ claire = Student(
                 ]
             )
 
-claire.get_num_classes()
-claire.summary()
+# claire.get_num_classes()
+# claire.summary()
 
 # Extra:
 # - create a function that will return the student with more classes
