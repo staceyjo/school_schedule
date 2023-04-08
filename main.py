@@ -21,9 +21,9 @@ quinn = Student(
 # print(vars(quinn))
 # quinn.greeting()
 
-print(quinn.add_class("Painting"))
-# quinn.get_num_classes()
-# quinn.summary()
+# print(quinn.add_class("Painting"))
+# print(quinn.get_num_classes())
+print(quinn.summary())
 
 # second instance
 claire = Student(
@@ -45,3 +45,24 @@ claire = Student(
 # Extra:
 # - create a function that will return the student with more classes
 # - create a test for that function
+
+ghameerah = Student(
+    "Ghameerah", 
+    "junior"
+)
+
+mikelle = Student(
+    "Mikelle", 
+    "junior"
+)
+
+# print(mikelle)
+# print(ghameerah)
+
+# mikelle.add_class("jazzercise")
+
+# print(mikelle)
+# print(ghameerah)
+
+# print(id(mikelle.classes))
+# print(id(ghameerah.classes))

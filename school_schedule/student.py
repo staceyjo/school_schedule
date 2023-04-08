@@ -12,10 +12,10 @@ class Student:
     """
     
     #  make the constructor, with the attributes:
-    def __init__(self, name, grade, classes):
+    def __init__(self, name, grade, classes=None):
         self.name = name 
         self.grade = grade
-        self.classes = classes
+        self.classes = classes if classes else []
         
     # def greeting(self):
     #     print("hi")
@@ -26,13 +26,16 @@ class Student:
         return self.classes
     
     def get_num_classes(self):
-        pass
+        return len(self.classes)
     
     def summary(self):
-        pass
+        self.display_each_class()
+        return self.__str__()
     
     def display_each_class(self):
-        pass
+        for name in self.classes:
+            print(name)
+        # to do: solution that dds to a string for classes
         
     def __str__(self):
         return f"Student {self.name}, grade {self.grade}, classes {self.classes}"
